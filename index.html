@@ -8,49 +8,25 @@
 </head>
 <body>
   <header>
-    <h1>Yeeps Building Team Project</h1>
-    <p>Collaborate. Design. Build.</p>
+    <h1>Yeeps Moon Team</h1>
+    <p>Making the best maps at scale</p>
   </header>
 
   <main>
     <section>
       <h2>Project Description</h2>
-      <p>This is a future collaborative space for the Yeeps building team to plan, draw, and innovate together. Use the canvas below for sketches, layout ideas, or just to brainstorm!</p>
+      <p>The yeeps moon team, is a special team of people simmilar to YWDS gathered for building. But instead of building official maps
+        we are looking to create the best maps possible, ones that push the boundrays of <b>Difficulty, Spectacle,</b>and <b>Fun</b></p>
     </section>
 
-    <section>
-      <h2>Team Canvas</h2>
-      <canvas id="projectCanvas"></canvas>
-    </section>
+
   </main>
 
   <footer>
-    &copy; 2025 Yeeps Team. All rights reserved.
+    @Ryeeper is the owner, contact via @ryeeper on discord.
   </footer>
 
-  <script>
-    const canvas = document.getElementById("projectCanvas");
-    const ctx = canvas.getContext("2d");
-    canvas.width = canvas.clientWidth;
-    canvas.height = canvas.clientHeight;
 
-    let drawing = false;
-
-    canvas.addEventListener("mousedown", () => drawing = true);
-    canvas.addEventListener("mouseup", () => drawing = false);
-    canvas.addEventListener("mousemove", draw);
-
-    function draw(e) {
-      if (!drawing) return;
-      const rect = canvas.getBoundingClientRect();
-      ctx.lineWidth = 2;
-      ctx.lineCap = "round";
-      ctx.strokeStyle = "#333";
-      ctx.lineTo(e.clientX - rect.left, e.clientY - rect.top);
-      ctx.stroke();
-      ctx.beginPath();
-      ctx.moveTo(e.clientX - rect.left, e.clientY - rect.top);
-    }
-  </script>
 </body>
 </html>
+
