@@ -1,46 +1,144 @@
+/* Base Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6fa;
+  color: #222;
 }
 
+/* Navbar */
+nav {
+  background-color: #222;
+  padding: 0.75rem 2rem;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar li {
+  display: inline;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  color: #1e90ff;
+}
+
+/* Header */
 header {
   background-color: #1e90ff;
   color: white;
-  padding: 1rem 2rem;
+  padding: 2rem;
   text-align: center;
+  border-bottom: 5px solid #1a75d1;
 }
 
+/* Main Layout */
 main {
   padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  max-width: 800px;
+  margin: auto;
 }
 
 section {
   background: white;
   border-radius: 10px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 }
 
+/* Image Styling */
 img {
-  border: 5px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
-canvas {
-  border: 2px dashed #aaa;
-  background-color: #fff;
-  width: 100%;
-  height: 500px;
+/* Blog Post Styling */
+.blog-post {
+  border-left: 6px solid #1e90ff;
+  padding-left: 1rem;
 }
 
+.blog-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
 footer {
   background-color: #1e90ff;
   color: white;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+  font-size: 0.9rem;
 }
+
+/* Role Sections with Colors */
+.hosts {
+  border-left: 5px solid #3498db; /* Blue */
+}
+
+.co-hosts {
+  border-left: 5px solid #2980b9; /* Darker Blue */
+}
+
+.content-cordinators {
+  border-left: 5px solid #9b59b6; /* Purple */
+}
+
+.map-engineers {
+  border-left: 5px solid #e74c3c; /* Red */
+}
+
+.builders {
+  border-left: 5px solid #1abc9c; /* Teal */
+}
+
+.technician {
+  border-left: 5px solid #f1c40f; /* Yellow */
+}
+
+.verifiers {
+  border-left: 5px solid #e84393; /* Pink/Magenta */
+}
+
+.helpers {
+  border-left: 5px solid #e67e22; /* Orange */
+}
+
+/* Responsive Iframe (Discord Widget) */
+iframe {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Utility */
+a {
+  color: #1e90ff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
