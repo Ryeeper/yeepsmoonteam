@@ -39,6 +39,46 @@
       <h3>Trailer:</h3>
       <p>We are currently working on getting a content cordinator so we can create a actual trailer, but till then enjoy this mini one </p>
       <p><i>(Which should be released later today or tommorow cus we had to scrap the orginal due to the audio going missing)</i></p>
+
+
+
+      <section class="announcement">
+  <h2>Make an Announcement</h2>
+  <textarea id="announcement-text" placeholder="Enter your announcement"></textarea>
+  <button onclick="sendAnnouncement()">Post Announcement</button>
+</section>
+
+<script>
+  const webhookUrl = "https://discord.com/api/webhooks/1353903654804914316/dvqLxy_j5nd2nNg9buTPseOBpeJQogf4-SiMOgDPUR9GciMB9AyYGIslVGaWMOYgObY2";
+
+  function sendAnnouncement() {
+    const announcementText = document.getElementById('announcement-text').value;
+
+    if (!announcementText.trim()) {
+      alert("Please enter an announcement.");
+      return;
+    }
+
+    fetch(webhookUrl, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ content: announcementText })
+    })
+    .then(response => {
+      if(response.ok) {
+        alert("Announcement successfully posted to Discord!");
+        document.getElementById('announcement-text').value = "";
+      } else {
+        alert("Failed to post announcement.");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("An error occurred.");
+    });
+  }
+</script>
+<!-- this above script is written by chatgpt -->
     
       
     </section>
