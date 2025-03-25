@@ -127,6 +127,10 @@ footer {
   border-left: 5px solid #e67e22; /* Orange */
 }
 
+.artist {
+  border-left: 5px solid #008080; /* teal */
+}
+
 /* Responsive Iframe (Discord Widget) */
 iframe {
   max-width: 100%;
