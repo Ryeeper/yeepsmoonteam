@@ -146,3 +146,52 @@ a:hover {
   text-decoration: underline;
 }
 
+
+.timeline-section {
+  padding: 1.5rem;
+}
+
+.timeline {
+  border-left: 3px solid #7289da;
+  margin-left: 1rem;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.65rem;
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  background-color: #7289da;
+  border-radius: 50%;
+  border: 2px solid #2c2f33;
+}
+
+.timeline-date {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #b9bbbe;
+  margin-bottom: 0.25rem;
+}
+
+.timeline-content h3 {
+  margin: 0;
+  color: #ffffff;
+}
+
+.timeline-content p {
+  margin: 0.3rem 0 0 0;
+  color: #dddddd;
+}
+
+
