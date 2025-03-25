@@ -48,41 +48,6 @@
   <button onclick="sendAnnouncement()">Post Announcement</button>
 </section>
 
-<script>
-  const webhookUrl = "https://discord.com/api/webhooks/1353903654804914316/dvqLxy_j5nd2nNg9buTPseOBpeJQogf4-SiMOgDPUR9GciMB9AyYGIslVGaWMOYgObY2";
-
-  function sendAnnouncement() {
-    const announcementText = document.getElementById('announcement-text').value;
-
-    if (!announcementText.trim()) {
-      alert("Please enter an announcement.");
-      return;
-    }
-
-    fetch(webhookUrl, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ content: announcementText })
-    })
-    .then(response => {
-      if(response.ok) {
-        alert("Announcement successfully posted to Discord!");
-        document.getElementById('announcement-text').value = "";
-      } else {
-        alert("Failed to post announcement.");
-      }
-    })
-    .catch(error => {
-      console.error("Error:", error);
-      alert("An error occurred.");
-    });
-  }
-</script>
-<!-- this above script is written by chatgpt -->
-    
-      
-    </section>
-
     <section>
       <h2 class="hosts">Hosts and Co-hosts</h2>
       <P>These are the people in charge of the project, and the ones to make sure it actually happens.</P>
@@ -151,7 +116,7 @@
     
   <section>
     <h1>Applications</h1>
-    <p>If you would like to apply to be part of the team, the link is right <a href="https://forms.gle/P4G5jBNBm3NXpSDt6">here</a>, all the details are in it and best of luck</p>
+    <p>If you would like to apply to be part of the team, the link is right <a href="https://forms.gle/P4G5jBNBm3NXpSDt6">here</a>, all the details are in it and best of luck. You can apply for any specific role, or anything you think would be helpful, Ie concep artists.</p>
 
     
   </section>
