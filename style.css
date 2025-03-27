@@ -180,7 +180,6 @@ a:hover {
 .timeline-date {
   font-size: 0.95rem;
   font-weight: bold;
-  color: #000000;
   margin-bottom: 0.25rem;
 }
 
@@ -191,7 +190,6 @@ a:hover {
 
 .timeline-content p {
   margin: 0.3rem 0 0 0;
-  color: #dddddd;
 }
 
 
