@@ -193,3 +193,39 @@ a:hover {
 }
 
 
+.map-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 2rem;
+}
+
+.map-card h2 {
+  color: #1e90ff;
+}
+
+.map-card img {
+  margin-top: 1rem;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.video-container {
+  margin-top: 1rem;
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+
