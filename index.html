@@ -42,75 +42,77 @@
             height:auto;
         }
         footer {
-    background-color: #191c1f;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-}
+            background-color: #191c1f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
         .automagic{
             width:auto;
             height:auto;
         }
 
-           .timeline::before {
-      content: '';
-      position: absolute;
-      left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: #454545; /* Timeline line color */
-      transform: translateX(-50%);
-    }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #454545; /* Timeline line color */
+            transform: translateX(-50%);
+        }
 
-    .timeline-item {
-      position: relative;
-      margin: 2rem 0;
-    }
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+        }
 
-    .timeline-item::before { /*Timeline dots*/
-      content: '';
-      position: absolute;
-      top: 0.75rem;
-      left: 50%;
-      width: 20px;
-      height: 20px;
-      background: #383838;
-      border: 3px solid #383838;
-      border-radius: 50%;
-      transform: translateX(-50%);
-      z-index: 1;
-    }
+        .timeline-item::before { /*Timeline dots*/
+            content: '';
+            position: absolute;
+            top: 0.75rem;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background: #383838;
+            border: 3px solid #383838;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
 
-    .timeline-content {
-      width: 45%;
-      padding: 1rem;
-      border-radius: 0.5rem;
-    }
+        .timeline-content {
+            width: 45%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
 
-    .left {
-      text-align: left;
-      margin-right: 55%;
-    }
+        .left {
+            text-align: left;
+            margin-right: 55%;
+        }
 
-    .right {
-      text-align: left;
-      margin-left: 55%;
-    }
-    @media only screen and (max-width: 767px) and (orientation: portrait) {
-  /* Styles to apply for phones in portrait mode */
-  .special {
-    font-size: 9.6px;
-  }
-  .specialer{
-    opacity:0;
-  }
-  .hlepr {
-    width: 90% !important;
-  }
-    }
+        .right {
+            text-align: left;
+            margin-left: 55%;
+        } 
+      @media only screen and (max-width: 767px) and (orientation: portrait) {
+      /* Styles to apply for phones in portrait mode */
+          .special {
+              font-size: 9.6px;
+          }
+
+          .specialer{
+              opacity:0;
+          }
+
+          .hlepr {
+              width: 90% !important;
+          }
+      }
     </style>
 
 
@@ -163,7 +165,7 @@
     <div class="card border-rounded-3 bg-black hlepr bg-opacity-25">
         <p class="card-header text-light fs-4 fw-bolder">Latest Announcement:</p>
         <div class="card-body">
-            <p class="text-white fs-6 muted">ArchBlossom City is officially released, zip through Japan in this new map! Go check it out in cw moons! More info on the <a href="https://scoobyplsdont.github.io/moon.dev/maps" class="text-decoration-none text-info">maps page</a>.</p>
+            <p class="text-white fs-6 muted">ArchBlossom City is officially released, zip through Japan in this new map! Go check it out in cw moons! More info on the <a href="/blog" class="text-decoration-none text-info">maps page</a>.</p>
         </div>
         <img src="assets/map-img/tap.png" class="hleper d-block mx-auto rounded-3" alt="Tap Tag Map" style="margin-bottom:24px;">
     </div>
