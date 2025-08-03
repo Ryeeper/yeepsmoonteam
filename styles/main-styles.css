@@ -4,7 +4,7 @@
         .image-object {
             height: 300px;
             width:88%;
-            background-image: url('assets/logo/moon.png');
+            background-image: url('../assets/logo/moon.png');
             background-size: cover;
             background-position: center center;
             border-radius:10px;
