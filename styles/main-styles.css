@@ -1,0 +1,104 @@
+        .scoob {
+            color:#66686b !important;
+        }
+        .image-object {
+            height: 300px;
+            width:88%;
+            background-image: url('assets/logo/moon.png');
+            background-size: cover;
+            background-position: center center;
+            border-radius:10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            text-align: center;
+            margin-top:12px;
+        }
+        .hlep{
+            margin: auto;
+            width: 80%;
+            /*border: 3px solid green;*/
+            padding-top: 4%;
+        }  
+        .hlepr{
+            margin: auto;
+            width: 66%; 
+            /*border: 3px solid green;*/
+            margin-top:12px;
+            margin-bottom:12px;
+        }
+        .hleper{
+            width:60%;
+            height:auto;
+        }
+        footer {
+            background-color: #191c1f;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        .automagic{
+            width:auto;
+            height:auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: #454545; /* Timeline line color */
+            transform: translateX(-50%);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .timeline-item::before { /*Timeline dots*/
+            content: '';
+            position: absolute;
+            top: 0.75rem;
+            left: 50%;
+            width: 20px;
+            height: 20px;
+            background: #383838;
+            border: 3px solid #383838;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .timeline-content {
+            width: 45%;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+
+        .left {
+            text-align: left;
+            margin-right: 55%;
+        }
+
+        .right {
+            text-align: left;
+            margin-left: 55%;
+        } 
+      @media only screen and (max-width: 767px) and (orientation: portrait) {
+      /* Styles to apply for phones in portrait mode */
+          .special {
+              font-size: 13px;
+          }
+
+          .spec{
+              opacity:0;
+          }
+
+          .hlepr {
+              width: 90% !important;
+          }
+      }
