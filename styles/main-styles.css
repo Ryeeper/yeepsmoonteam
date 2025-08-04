@@ -88,6 +88,12 @@
             text-align: left;
             margin-left: 55%;
         } 
+        
+        .blog-date {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.6rem;
+        }
       @media only screen and (max-width: 767px) and (orientation: portrait) {
       /* Styles to apply for phones in portrait mode */
           .special {
@@ -102,3 +108,4 @@
               width: 90% !important;
           }
       }
+    
