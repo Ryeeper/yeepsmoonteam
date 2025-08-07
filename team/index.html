@@ -7,6 +7,7 @@
     <title>Yeeps Moon Team... Team</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link href="../styles/main-styles.css" rel="stylesheet">
+    <link href="../styles/color-styles.css" rel="stylesheet">
 
   </head>
   <body class="bg-dark text-light">
@@ -72,7 +73,6 @@
     </div>
 </div>
 
-    
 <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="host">
     <p class="card-header text-light fs-4 fw-bolder">🖥 Hosts and Co-Hosts:</p>
         <div class="card-body">
@@ -139,13 +139,13 @@
                 <li>Shadow.90</li>
                 <li>MrDuck</li>
                 <li>TheFam4</li>
-                <li><a href="./leprechaun/" class="text-decoration-none" style="color:#146c43">Leprechaun</a></li>
+                <li><a href="./leprechaun/" class="text-decoration-none ymt-leprechaun">Leprechaun</a></li>
                 <li>Drasts</li>
                 <li>Hyper MAX</li>
                 <li>F1R3B01</li>
                 <li>Spaghetti Spider</li>
                 <li>Andr3wLeon</li>
-                <li><a href="./hax" class="text-decoration-none text-light">Hax (Haxolotl)</a></li>
+                <li><a href="./hax" class="text-decoration-none ymt-hax" data-bs-html="true" data-bs-toggle="tooltip" data-bs-title="<p class="ymt-hax bg-transparent">(Haxolotl)</p>">Hax</a></li>
             </ul>
         </div>
 </div>
@@ -231,7 +231,7 @@
             <p></p>
             <ul class="text-light">
               <li>Pancakes</li>
-              <li><a href="./leprechaun/" class="text-decoration-none" style="color:#146c43">Leprechaun</a></li>
+              <li><a href="./leprechaun/" class="text-decoration-none ymt-leprechaun">Leprechaun</a></li>
               <li>Al<a href="./ali/" class="text-decoration-none text-light">Ali</a>i</li>
               <li>Compin</li>
               <li>T5</li>
@@ -287,7 +287,10 @@
       
 
 
-      
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </body>
     <footer>Website hosted by @ryeeper, maintained by @scoobyplsdont. Contact either on discord when necessary.</footer>
