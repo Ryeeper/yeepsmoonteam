@@ -99,10 +99,6 @@
            right: 15px;
            z-index: 9999;
         }
-        .minilogo{
-           width: 24px;
-           height: 24px; 
-        }
       @media only screen and (max-width: 767px) and (orientation: portrait) {
       /* Styles to apply for phones in portrait mode */
           .special {
