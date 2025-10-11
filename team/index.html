@@ -79,7 +79,7 @@
             <p></p>
             <ul class="text-light">
                 <li><a href="./ryeeper" class="text-decoration-none text-light">Ryeeper</a></li>
-                <li>mrduckthefifth</li>
+                <li class="color:#585e69" >mrduckthefifth</li>
                 <li>Bracket</li>
             </ul>
     </div>
@@ -88,7 +88,7 @@
 <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="builders">
     <p class="card-header text-light fs-4 fw-bolder">🛠️ Builders:</p>
         <div class="card-body">
-            <p class="text-light">Responsible for building terrain, structures, decoration, and design layout.</p>
+            <p class="text-light">People who simulate the beauty of nature, dark futures, and more. They form land, build cities, and make maps appealing to thep players' eyes!</p>
             <p></p>
             <ul class="text-light">
                 <li><a href="./ali/" class="text-decoration-none text-light">Ali</a></li>
@@ -130,7 +130,7 @@
 <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="technicians">
     <p class="card-header text-light fs-4 fw-bolder">🔧 Technicians:</p>
         <div class="card-body">
-            <p class="text-light">Handle wiring, logic, mechanics, and effects in maps.</p>
+            <p class="text-light">Masters in their craft, these people handle every technological build in our maps. Creating stuff from a simple day and night cycle, to stuff as large as custom gamemodes!</p>
             <p></p>
             <ul class="text-light">
                 <li><a href="./ilikeredstone/" class="text-decoration-none text-danger">6scientists</a></li>
@@ -152,7 +152,7 @@
 <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="content_create">
     <p class="card-header text-light fs-4 fw-bolder">📣 Content Coordinators:</p>
         <div class="card-body">
-            <p class="text-light">Work on trailers, announcements, sneak peeks, and community hype.</p>
+            <p class="text-light">Those who interact with the community to showcase maps. Whether it be through trailers, sneak peaks, or just hyping them.</p>
             <p></p>
             <ul class="text-light">
                 <li><a href="https://www.youtube.com/@Sodapopyeep" target="_blank" class="text-decoration-none text-info">Sodapopp</a></li>
@@ -189,15 +189,16 @@
 <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="directors">
     <p class="card-header text-light fs-4 fw-bolder">🗺️ Map Directors:</p>
         <div class="card-body">
-            <p class="text-light">Lead the development and creative direction of specific maps.</p>
+            <p class="text-light">Those who are leading the creation of new maps, and those who have retired from direction.</p>
             <p></p>
             <ul class="text-light">
                 <li>Watermelon — Sandbox Map</li>
-                <li>MrDuck — Upcoming Space Rpg Map</li>
+                <li><div class="color:#585e69" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="We miss him, he left due to college😭">MrDuck</div> — Space Rpg Map (Alien Survival)</li>
                 <li>Brenn — Mall Prop Hunt Map</li>
                 <li>Bracket — Upcoming Splatoon Kit PVP Map</li>
                 <li>F1R3B01 — Upcoming Random Road Map</li>
                 <li><a href="./ali/" class="text-decoration-none text-light">Ali</a> — Japanese Tap Tag Map (ArchBlossom City)</li>
+                <li><a href="./ali/" class="text-decoration-none text-light">Ali (again)</a> — Upcoming Moonlight Carnival Map</li>
                 <li><a href="./ryeeper" class="text-decoration-none text-light">Ryeeper</a> — Upcoming Parkour Map</li>
             </ul>
     </div>
@@ -226,7 +227,7 @@
     <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="artists">
     <p class="card-header text-light fs-4 fw-bolder">🎨 Concept Art & Visuals:</p>
         <div class="card-body">
-            <p class="text-light">Create visual concepts to inspire or guide map building.</p>
+            <p class="text-light">These people create concepts for new maps and banners for them too! </p>
             <p></p>
             <ul class="text-light">
               <li>Pancakes</li>
@@ -243,7 +244,7 @@
     <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="music">
     <p class="card-header text-light fs-4 fw-bolder">🎵 Music Assistants:</p>
         <div class="card-body">
-            <p class="text-light">Assist with creating and implementing upcoming music.</p>
+            <p class="text-light">People who craft and replicate music in Yeeps. Their job is to make maps feel more immersive to players through sound.</p>
             <p></p>
             <ul class="text-light">
                 <li>Composer: Acekkloudz</li>
@@ -262,10 +263,10 @@
 <div class="card hlepr rounded-3 bg-black bg-opacity-25" id="credits">
     <p class="card-header text-light fs-4 fw-bolder">👀 Other Credits:</p>
         <div class="card-body">
-            <p class="text-light">These are people who will be credited as needed for past help or support.</p>
+            <p class="text-light">Those who help in many ways, but dont have a solid part on the team. As well as those who have helped tremendously without being on the team.</p>
             <p></p>
             <ul class="text-light">
-                <li>njew25</li>
+                <li data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="The Trass dev (Nathan)">njew25</li>
                 <li><a href="./scoob/" class="text-decoration-none ymt-scoob">Scoob</a></li>
             </ul>
     </div>
@@ -287,6 +288,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
   </body>
     <footer>Website hosted by @ryeeper, maintained by @scoobyplsdont. Contact either on discord when necessary.</footer>
 </html>
